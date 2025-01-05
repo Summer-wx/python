@@ -1,0 +1,31 @@
+#输入摄氏度，转化为华氏度。
+C=float(input("输入摄氏度："))
+F=C*1.8+32
+print("{}摄氏度对应的华氏度为{:.2f}".format(C,F))
+
+#输入半径，求球表面积和体积。
+r=float(input("输入球的半径："))
+S=4*3.14*r*r
+V=3.14*r*r*r*4/3
+print("球的表面积为{:.2f}，体积为{:.2f}".format(S,V))
+
+#求解一元二次方程x2-10x+16=0,保留四位小数
+for i in range(100):
+    if i*i-10*i+16==0:
+        print("x的值为{}".format(i))
+
+# 求解一元二次方程x2-10x+16=0,保留四位小数
+from math import *
+a=1
+b=-10
+c=16
+X=sqrt(b*b-4*a*c)
+x1=(-b+X)/(2*a)
+x2=(-b-X)/(2*a)
+print("该方程的解为{}和{}".format(x1,x2))
+
+#输入姓名和出生年份，输出姓名和年龄
+name=input("输入名字：")
+year=int(input("输入出生年份:"))
+year1=2025-year
+print("姓名：{}，年纪：{}".format(name,year1))
