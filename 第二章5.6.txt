@@ -1,0 +1,25 @@
+str="https://tech.ifeng.com/digi/"
+count=0
+for n in str:
+    if n=='i':
+        count+=1
+print("i出现了{}次".format(count))#计算i出现的次数
+print(str.count('i'))#计算i出现的次数
+print(str.index("ifeng"))#计算”ifeng“出现的位置
+print(str.replace('.','_'))#将.替换成_
+print(str[13:18],str[-15:-10],str[-15:18])#正向切片、反向切片、混合切片提取“ifeng”和“digi”
+print(str[-5:-1],str[23:27],str[-5:27])
+print(str.upper())#将字符全部改为大写
+print(len(str))#输出字符串个数
+print(str+"core")#在字符串后面拼接“core”
+
+r=0.0005#日贷款利率
+m=10000#借款金额
+b=0.20#保证金20%
+fa=0.005#日罚息0.5%
+m1=m*(1-r*365-b)
+print(m1)#1.实际收到发放的贷款
+m2=m*365*r*2+m*(1+fa)**365
+print(m2)#2.两年后需支付的本利和
+m3=(m-m1-m*b)/m1
+print(m3)#一年后按时还款的实际借款利率
