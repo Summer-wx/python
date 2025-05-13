@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+//百钱买百鸡，小鸡1元，母鸡2元，公鸡3元
+int main(){
+	for(int i=0;i<=100;i+=1)
+		for(int j=0;j<=50;i+=1)
+			for(int k;k<=33;k+=1){
+				if((i+j+k)==100&&(i+2*j+3*k)==100){
+					cout<<i<<""<<j<<""<<k<<"\n";
+				}
+			}
+	return 0;
+}
