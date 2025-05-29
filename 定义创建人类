@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+//定义人类
+class People{
+public:
+		int age;
+		float height;
+		string name;
+		People(){}
+};
+//创建人类
+int main(){
+	//利用指针创建一个人类
+	People* p=new People();
+	p->age=18;
+	p->height=189.5;
+	p->name="xiaoming";
+	return 0;
+}
