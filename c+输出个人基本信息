@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//生日，升高，名字
+	int age=18;
+	float height=168.5;
+	string name="xiaoming";
+	//输出
+	cout<<age<<endl;
+	cout<<height<<endl;
+	cout<<name<<endl;
+	return 0;
+}
