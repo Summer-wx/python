@@ -1,0 +1,12 @@
+#include<iostream>//导入输入输出
+using namespace std;//使用标准名字空间
+
+//启动函数
+int main(){
+	//记录语句运行的次数
+	int count=0;
+	for(int i=10;i>=1;i=i/2){
+		count=count+1;
+	}
+	cout<<count;
+}
