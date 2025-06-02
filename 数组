@@ -1,0 +1,15 @@
+#include<iostream>//输入输出流
+using namespace std;//标准名字空间
+//主方法
+int main()
+{
+	//创建数组
+	int a[]={1,2,3,4,5};
+	int k=a[0];
+	int m=a[4];
+	int p=a[sizeof(a)/sizeof(int)-1];//取长度-1
+	cout<<p;
+	//结果
+		return 0;
+}
+
