@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	//存储a的值为1
+	int a=1;
+	//查看a的地址
+	int* p=&a;
+	cout<<p;
+	//通过地址改变值
+	*p=2;
+	cout<<a;
+	//定义一组数据
+	int a[]={1,2,3,4,5};	
+	//去索引值0位置上的地址
+	cout<<&a[0]<<endl;	
+	return 0;
+}
