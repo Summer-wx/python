@@ -1,0 +1,10 @@
+class student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display_info(self):
+        print("name:",self.name)
+        print("age:",self.age)
+student_name=input("enter name:")
+student_age=int(input("enter age:"))
+print("name:{},age:{}".format(student_name,student_age))
